@@ -9,6 +9,11 @@ Package license: Apache-2.0
 
 Summary: Amazon CodeWhisperer for JupyterLab
 
+Amazon CodeWhisperer is an AI coding companion which provides developers
+with real-time code suggestions in JupyterLab. Individual developers can
+use CodeWhisperer for free in JupyterLab and AWS SageMaker Studio.
+
+
 Current build status
 ====================
 
