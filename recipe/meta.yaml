@@ -1,5 +1,5 @@
 {% set name = "amazon-codewhisperer-jupyterlab-ext" %}
-{% set version = "1.0.6" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-codewhisperer-jupyterlab-ext-{{ version }}.tar.gz
-  sha256: ff19ee8f4901f6306b14b7313d4669b289aee3acda3831d6b44080e07327b5df
+  sha256: 0deba2c5491464f398948b42c460fde44f66951f2b76eed8dd95166bcadde524
 
 build:
   noarch: python
@@ -18,13 +18,13 @@ requirements:
   host:
     - python >=3.6
     - jupyter_packaging >=0.10,<1.dev0,<2
-    - jupyterlab >=3.1,<4.dev0
+    - jupyterlab >=4.0,<5.0
     - pip
   run:
     - python >=3.6
     - boto3
     - botocore
-    - jupyterlab >=3.1,<4.dev0
+    - jupyterlab >=4.0,<5.0
 
 test:
   imports:
@@ -39,6 +39,10 @@ about:
   summary: Amazon CodeWhisperer for JupyterLab
   license: Apache-2.0
   license_file: LICENSE
+  description: |
+    Amazon CodeWhisperer is an AI coding companion which provides developers 
+    with real-time code suggestions in JupyterLab. Individual developers can
+    use CodeWhisperer for free in JupyterLab and AWS SageMaker Studio.
 
 extra:
   recipe-maintainers:
