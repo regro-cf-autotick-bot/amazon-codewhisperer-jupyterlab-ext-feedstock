@@ -1,5 +1,5 @@
 {% set name = "amazon-codewhisperer-jupyterlab-ext" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amazon-codewhisperer-jupyterlab-ext-{{ version }}.tar.gz
-  sha256: 0c7893337c024b142cca133d346b1871f4e922120408a85c3908b582fc27a54e
+  sha256: 62edd2273a36c6189bb258ae5fa40d38c3036235e2e2cb606c7a99f041b6f31a
 
 build:
   noarch: python
